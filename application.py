@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 @app.route('/auth', methods=["POST", "GET"])
 def auth():
-
-	email = str.lower(request.args['email'].replace(' ', ''))
+	return '123'
+	'''email = str.lower(request.args['email'].replace(' ', ''))
 	if(email == ''):
 		return response('false', 'Empty email')
 
@@ -32,10 +32,10 @@ def auth():
 			{
 				"hash": user[0]['hash'],
 				"id_user": user[0]['id_user']
-			})
+			})'''
 
 
-@app.route('/register', methods=["POST", "GET"])
+'''@app.route('/register', methods=["POST", "GET"])
 def register():
 
 	email = str.lower(request.args['email'].replace(' ', ''))
@@ -67,4 +67,4 @@ def register():
 	if(len(user) == 0):
 		return response('false', 'User not found')
 	else:
-		return response('true', {"id_user": id_user, "hash":hash_db})
+		return response('true', {"id_user": id_user, "hash":hash_db})'''
