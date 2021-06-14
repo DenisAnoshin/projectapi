@@ -1,7 +1,7 @@
 
-from functions import response
-from db import db
-import hashlib
+#from functions import response
+#from db import db
+#import hashlib
 from flask import Flask, request
 app = Flask(__name__)
 
